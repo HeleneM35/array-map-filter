@@ -26,8 +26,21 @@ Expected OUTPUT for this sample array:
 
 */
 
-function getStringsLength(strings) {
-}
+const food = ['Chicken', 'Bacon', 'Tofu', 'Mayonnaise']
+
+function getStringsLength(foodStrings) {
+
+   const foodLength = foodStrings.length
+
+   return food.map((foodStrings) => (`${foodStrings} contains ${foodLength} characters`))
+ }
+
+
+console.log(getStringsLength(food))
+
+
+// console.log(`${foodStrings} contains ${length} characters`)
+
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
